@@ -1,0 +1,82 @@
+add_namespace = ast_dj
+
+country_event = {
+    id = ast_dj.1
+    title = ast_dj.1.t
+    desc = ast_dj.1.d
+    is_triggered_only = yes
+    option = { 
+        name = ast_dj.1.a 
+        effect_tooltip = {
+            AST = {
+                puppet = HUN
+            }
+        }
+        hidden_effect = {
+            AST = { country_event = { id = ast_dj.2 days = 1 } }
+        }
+    }
+    option = { 
+        name = ast_dj.1.b 
+        effect_tooltip = {
+            AST = {
+                create_wargoal = { 
+                    type = puppet_wargoal 
+                    target = HUN 
+                }
+            }
+        }
+        hidden_effect = {
+            AST = { country_event = { id = ast_dj.3 days = 1 } }
+        }
+    }
+}
+country_event = {
+    id = ast_dj.2
+    title = ast_dj.2.t
+    desc = ast_dj.2.d
+    is_triggered_only = yes
+    option = {
+        ai_chance = { 
+            factor = 100 
+        }
+        name = ast_dj.2.a
+        puppet = HUN
+    }
+}
+country_event = {
+    id = ast_dj.3
+    title = ast_dj.3.t
+    desc = ast_dj.3.d
+    is_triggered_only = yes
+    option = { 
+        name = ast_dj.3.a 
+        ai_chance = { 
+            factor = 0 
+        }
+        create_wargoal = { 
+            type = puppet_wargoal 
+            target = HUN 
+        }
+    }
+}
+country_event = {
+    id = ast_dj.4
+    title = ast_dj.4.t
+    desc = ast_dj.4.d
+    is_triggered_only = yes
+    option = { 
+        name = ast_dj.4.a 
+        if = {
+            limit = { 
+                tag = AST 
+                HUN = { exists = yes } 
+            }
+            annex_country = { 
+                target = HUN 
+                transfer_troops = yes 
+            }
+            set_country_flag = AST_DJ_annexed_hungary
+        }
+    }
+}

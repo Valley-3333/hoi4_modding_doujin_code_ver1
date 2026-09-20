@@ -1,0 +1,162 @@
+focus_tree = {
+    id = AST_DJ_focus_tree
+    country = {
+        factor = 0
+        modifier = { 
+            add = 1000 
+            tag = AST 
+        }
+    }
+    default = no
+    focus = {
+        id = AST_DJ_unite_with_hungary
+        icon = GFX_goal_generic_political_pressure
+        x = 0
+        y = 0
+        cost = 1
+        available = { 
+            HUN = { 
+                exists = yes 
+                is_puppet = no
+            } 
+        }
+        completion_reward = {
+            HUN = { country_event = { id = ast_dj.1 days = 1 } }
+        }
+    }
+    focus = {
+        id = AST_DJ_annex_hungary_immediate
+        icon = GFX_goal_generic_political_pressure
+        relative_position_id = AST_DJ_unite_with_hungary
+        mutually_exclusive = {
+            focus = AST_DJ_take_long_time
+        }
+        cost = 1
+        x = -1
+        y = 1
+        prerequisite = { 
+            focus = AST_DJ_unite_with_hungary 
+        }
+        available = { 
+            HUN = { is_puppet_of = AST }
+        }
+        completion_reward = {
+            country_event = { id = ast_dj.4 days = 1 }
+        }
+    }
+    focus = {
+        id = AST_DJ_take_long_time
+        icon = GFX_goal_generic_political_pressure
+        relative_position_id = AST_DJ_unite_with_hungary
+        mutually_exclusive = {
+            focus = AST_DJ_annex_hungary_immediate
+        }
+        cost = 1
+        x = 1
+        y = 1
+        prerequisite = { 
+            focus = AST_DJ_unite_with_hungary 
+        }
+        available = { 
+            HUN = { is_puppet_of = AST }
+        }
+        completion_reward = {
+            add_stability = 0.10
+        }
+    }
+    focus = {
+        id = AST_DJ_cooperate_with_local_government
+        icon = GFX_goal_generic_political_pressure
+        relative_position_id = AST_DJ_unite_with_hungary
+        cost = 1
+        x = 1
+        y = 2
+        prerequisite = { 
+            focus = AST_DJ_take_long_time 
+            focus = AST_DJ_annex_hungary_immediate
+        }
+        completion_reward = {
+            if = {
+                limit = { 
+                    HUN = { is_puppet_of = AST }
+                }
+            }
+            else = {
+                every_owned_state = {
+                    limit = { 
+                        is_core_of = HUN 
+                    }
+                    add_compliance = 30
+                }
+            }
+        }
+
+    }
+    focus = {
+        id = AST_DJ_invest_in_hungary
+        icon = GFX_goal_generic_political_pressure
+        relative_position_id = AST_DJ_unite_with_hungary
+        cost = 1
+        x = -1
+        y = 2
+        prerequisite = { 
+            focus = AST_DJ_annex_hungary_immediate
+            focus = AST_DJ_take_long_time
+        }
+        completion_reward = {
+            if = {
+                limit = { 
+                    HUN = { is_puppet_of = AST }
+                }
+                HUN = {
+                    every_owned_state = {
+                        limit = { 
+                            is_core_of = HUN 
+                        }
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                            type = industrial_complex
+                            level = 1
+                        }
+                    }
+                }
+            }
+            else = {
+                every_owned_state = {
+                    limit = { 
+                        is_core_of = HUN 
+                    }
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = industrial_complex
+                        level = 1
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = AST_DJ_Having_His_Majesty_Emu_as_Sovereign
+        icon = GFX_goal_generic_political_pressure
+        relative_position_id = AST_DJ_unite_with_hungary
+        cost = 1
+        x = 0
+        y = 3
+        prerequisite = { focus = AST_DJ_cooperate_with_local_government} 
+        prerequisite = { focus = AST_DJ_invest_in_hungary}
+        available = { 
+            has_cosmetic_tag = AST_HUN_UNION
+        }
+        allow_branch = {
+            has_cosmetic_tag = AST_HUN_UNION
+        }
+        completion_reward = {
+            promote_character = AST_rod_hull
+            set_country_leader_name = "Emperor Emu with Rod Hull"
+            swap_ideas = {
+                remove = AST_DJ_union_spirit
+                add = AST_DJ_union_spirit_2
+            }
+        }
+    }
+}

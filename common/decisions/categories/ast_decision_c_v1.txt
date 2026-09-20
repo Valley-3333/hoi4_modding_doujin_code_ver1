@@ -1,0 +1,11 @@
+AST_DJ_formation_category = {
+    icon = GFX_decision_generic_national_focus
+    allowed = { 
+        original_tag = AST 
+    }
+    visible = { 
+        original_tag = AST 
+        has_completed_focus = AST_DJ_unite_with_hungary
+        NOT = { has_country_flag = AST_HUN_formed_union }
+    }
+}

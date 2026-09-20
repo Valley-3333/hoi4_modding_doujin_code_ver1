@@ -1,0 +1,12 @@
+add_namespace = ast_dj_news
+
+news_event = {
+    id = ast_dj_news.1
+    title = ast_dj_news.1.t
+    desc = ast_dj_news.1.d
+    major = yes
+    is_triggered_only = yes
+    option = { 
+        name = ast_dj_news.1.a 
+    }
+}
