@@ -6,7 +6,10 @@ country_event = {
     desc = ast_dj.1.d
     is_triggered_only = yes
     option = { 
-        name = ast_dj.1.a 
+        name = ast_dj.1.a
+        ai_chance = { 
+            factor = 100 
+        } 
         effect_tooltip = {
             AST = {
                 puppet = HUN
@@ -18,10 +21,13 @@ country_event = {
     }
     option = { 
         name = ast_dj.1.b 
+        ai_chance = { 
+            factor = 0 
+        }
         effect_tooltip = {
             AST = {
                 create_wargoal = { 
-                    type = puppet_wargoal 
+                    type = puppet_wargoal_focus
                     target = HUN 
                 }
             }
@@ -37,9 +43,6 @@ country_event = {
     desc = ast_dj.2.d
     is_triggered_only = yes
     option = {
-        ai_chance = { 
-            factor = 100 
-        }
         name = ast_dj.2.a
         puppet = HUN
     }
@@ -51,11 +54,8 @@ country_event = {
     is_triggered_only = yes
     option = { 
         name = ast_dj.3.a 
-        ai_chance = { 
-            factor = 0 
-        }
         create_wargoal = { 
-            type = puppet_wargoal 
+            type = puppet_wargoal_focus
             target = HUN 
         }
     }

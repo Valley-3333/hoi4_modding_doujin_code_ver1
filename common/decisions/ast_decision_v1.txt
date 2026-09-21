@@ -6,10 +6,10 @@ AST_DJ_formation_category = {
         }
         available = {
             all_owned_state = {
-                limit = { 
-                    is_core_of = HUN 
+                OR = {
+                    NOT = { is_core_of = HUN }
+                    compliance > 35
                 }
-                compliance > 35
             }
             has_country_flag = AST_DJ_annexed_hungary
             hidden_trigger = {
@@ -29,6 +29,10 @@ AST_DJ_formation_category = {
                     is_core_of = HUN 
                 }
                 add_core_of = AST
+            }
+            load_focus_tree = {
+                tree = AST_DJ_focus_tree
+                keep_completed = yes
             }
             news_event = { id = ast_dj_news.1 hours = 6 }
         }
