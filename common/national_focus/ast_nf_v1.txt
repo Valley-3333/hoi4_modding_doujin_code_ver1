@@ -153,10 +153,6 @@ focus_tree = {
             has_cosmetic_tag = AST_HUN_UNION
         }
         completion_reward = {
-            if = {
-                limit = { NOT = { has_character = AST_rod_hull } }
-                recruit_character = AST_rod_hull
-            }
             add_country_leader_role = {
                 character = AST_rod_hull
                 promote_leader = yes
