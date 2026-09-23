@@ -79,7 +79,9 @@ focus_tree = {
             if = {
                 limit = { 
                     HUN = { is_puppet_of = AST }
+                    has_completed_focus  = AST_DJ_take_long_time
                 }
+                custom_effect_tooltip = AST_DJ_unlock_annex_hungary_tt
             }
             else = {
                 every_owned_state = {
@@ -163,9 +165,9 @@ focus_tree = {
                     expire = "1965.1.1.1"
                 }
             }
-            set_country_leader_name = {
-                ideology = democratic
-                name = "Emperor Emu with Rod Hull"
+            set_character_name = {
+                character = AST_rod_hull
+                name = AST_DJ_emperor_emu_with_rod_hull
             }
             swap_ideas = {
                 remove_idea = AST_DJ_union_spirit

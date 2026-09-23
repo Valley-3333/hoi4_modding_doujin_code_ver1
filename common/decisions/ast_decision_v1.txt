@@ -5,10 +5,16 @@ AST_DJ_formation_category = {
             has_country_flag = AST_DJ_annexed_hungary
         }
         available = {
-            all_owned_state = {
-                OR = {
-                    NOT = { is_core_of = HUN }
-                    compliance > 35
+            OR = {
+                AND = {
+                    has_completed_focus = AST_DJ_take_long_time
+                    has_completed_focus = AST_DJ_cooperate_with_local_government
+                }
+                all_owned_state = {
+                    OR = {
+                        NOT = { is_core_of = HUN }
+                        compliance > 35
+                    }
                 }
             }
             has_country_flag = AST_DJ_annexed_hungary
