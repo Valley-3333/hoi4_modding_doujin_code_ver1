@@ -30,10 +30,7 @@ AST_DJ_formation_category = {
                 }
                 add_core_of = AST
             }
-            load_focus_tree = {
-                tree = AST_DJ_focus_tree
-                keep_completed = yes
-            }
+            mark_focus_tree_layout_dirty = yes
             news_event = { id = ast_dj_news.1 hours = 6 }
         }
     }
