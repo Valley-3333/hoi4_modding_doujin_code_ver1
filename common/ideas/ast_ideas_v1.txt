@@ -1,6 +1,7 @@
 ideas = {
     country = {
         AST_DJ_union_spirit = {
+            picture = AST_DJ_australia_hungary
             allowed = { 
                 always = no 
             }
@@ -15,6 +16,7 @@ ideas = {
             }
         }
         AST_DJ_union_spirit_2 = {
+            picture = AST_DJ_emu_war
             allowed = { 
                 always = no 
             }

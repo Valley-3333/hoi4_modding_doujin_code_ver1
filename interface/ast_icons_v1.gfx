@@ -1,0 +1,19 @@
+spriteTypes = {
+    # National focus: icon = GFX_focus_AST_DJ_austria_hungary
+    spriteType = {
+        name = "GFX_focus_AST_DJ_austria_hungary"
+        texturefile = "gfx/interface/goals/focus_proclaim_the_restauration_of_austria_hungary.dds"
+    }
+
+    # National spirit: picture = AST_DJ_australia_hungary
+    spriteType = {
+        name = "GFX_idea_AST_DJ_australia_hungary"
+        texturefile = "gfx/interface/ideas/australia_hungary.dds"
+    }
+
+    # National spirit: picture = AST_DJ_emu_war
+    spriteType = {
+        name = "GFX_idea_AST_DJ_emu_war"
+        texturefile = "gfx/interface/ideas/the_weapons_of_the_third_emu_war.dds"
+    }
+}
