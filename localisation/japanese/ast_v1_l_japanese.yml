@@ -21,9 +21,22 @@
  ast_dj.4.d: "ハンガリーを直接統治する準備が整った。併合を実施し、新国家の成立に向けて進もう。"
  ast_dj.4.a: "併合を実行する"
 
- # 3. 国家形成・国民精神・ニュース
+ # 3. NF3：段階的な統合
+ AST_DJ_take_long_time: "段階的な統合"
+ AST_DJ_take_long_time_desc: "統合を急ぐ必要はない。ハンガリーの現地政府を維持し、安定した関係を築こう。"
+
+ # 4. NF4・5：現地政府との協力・投資
+ AST_DJ_cooperate_with_local_government: "現地政府との協力"
+ AST_DJ_cooperate_with_local_government_desc: "現地の行政機関と協力し、両国の統合に向けた体制を整えよう。"
+ AST_DJ_unlock_annex_hungary_tt: "§Yハンガリーを併合§!ディシジョンを解禁する。この併合後、迎合度条件なしで§Yオーストラリア＝ハンガリー§!を形成できる。"
+ AST_DJ_invest_in_hungary: "ハンガリーへの投資"
+ AST_DJ_invest_in_hungary_desc: "ハンガリーの産業を育成するため、工場の建設を進めよう。"
+
+ # 5. デシジョン・国家形成・国民精神・ニュース
  AST_DJ_formation_category: "国家の形成"
  AST_DJ_formation_category_desc: "ハンガリーとの統合を進め、新しい国の成立を目指そう。"
+ AST_DJ_annex_hungary: "ハンガリーを併合"
+ AST_DJ_annex_hungary_desc: "ハンガリーの直接統治へ移行し、国家形成への道を開こう。"
  AST_DJ_form_union: "オーストラリア＝ハンガリーを形成"
  AST_DJ_form_union_desc: "両国の統合を宣言する。段階的な統合では、現地政府との協力を完了し、ハンガリーを併合すれば形成できる。速やかな併合では、自国が領有するハンガリー中核州すべての迎合度が35を超える必要がある。いずれもハンガリー中核州を少なくとも1州領有する必要がある。"
  AST_HUN_UNION: "オーストラリア＝ハンガリー"
@@ -35,18 +48,7 @@
  ast_dj_news.1.d: "オーストラリアはハンガリーとの統合を経て、新国家の成立を宣言した。"
  ast_dj_news.1.a: "世界地図が変わった"
 
- # 4. 段階的統合・現地政府との協力・投資
- AST_DJ_take_long_time: "段階的な統合"
- AST_DJ_take_long_time_desc: "統合を急ぐ必要はない。ハンガリーの現地政府を維持し、安定した関係を築こう。"
- AST_DJ_cooperate_with_local_government: "現地政府との協力"
- AST_DJ_cooperate_with_local_government_desc: "現地の行政機関と協力し、両国の統合に向けた体制を整えよう。"
- AST_DJ_unlock_annex_hungary_tt: "§Yハンガリーを併合§!ディシジョンを解禁する。この併合後、迎合度条件なしで§Yオーストラリア＝ハンガリー§!を形成できる。"
- AST_DJ_annex_hungary: "ハンガリーを併合"
- AST_DJ_annex_hungary_desc: "ハンガリーの直接統治へ移行し、国家形成への道を開こう。"
- AST_DJ_invest_in_hungary: "ハンガリーへの投資"
- AST_DJ_invest_in_hungary_desc: "ハンガリーの産業を育成するため、工場の建設を進めよう。"
-
- # 5. エミュー君主・国民精神の強化
+ # 6. NF6：エミュー君主・国民精神の強化
  AST_DJ_Having_His_Majesty_Emu_as_Sovereign: "エミュー陛下を君主に"
  AST_DJ_Having_His_Majesty_Emu_as_Sovereign_desc: "新国家には、両国を象徴する君主が必要だ。ロッド・ハルとともに、エミュー陛下を迎えよう。"
  AST_DJ_emperor_emu_with_rod_hull: "エミュー皇帝とロッド・ハル"
