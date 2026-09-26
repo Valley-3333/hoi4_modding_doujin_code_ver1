@@ -8,12 +8,12 @@ spriteTypes = {
     # National spirit: picture = AST_DJ_australia_hungary
     spriteType = {
         name = "GFX_idea_AST_DJ_australia_hungary"
-        texturefile = "gfx/interface/ideas/australia_hungary.dds"
+        texturefile = "gfx/achievements/australia_hungary.dds"
     }
 
     # National spirit: picture = AST_DJ_emu_war
     spriteType = {
         name = "GFX_idea_AST_DJ_emu_war"
-        texturefile = "gfx/interface/ideas/the_weapons_of_the_third_emu_war.dds"
+        texturefile = "gfx/achievements/the_weapons_of_the_third_emu_war.dds"
     }
 }
